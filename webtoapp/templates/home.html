@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Python button script
+        </title>
+    </head>
+    <body>
+
+        <form action="/external/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        Input Image:
+        <input type="file" name="image" required>
+        <br><br>
+        <input type="submit" value="Enter Image">
+        </form>
+    <p>In button writing you must write without space if you want to write LOG IN write like LOGspaceIN  </p>
+    </body>
+</html>

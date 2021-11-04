@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Python button script
+        </title>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        {% if Button_number != 0  %}
+        <form action="/another/" method="POST">
+            {% csrf_token %}
+            <select name="buttonColor" id="buttonColor">
+              <option selected disabled="true">Select color</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+            <input type="submit" value="Insert" />
+        </form>
+        {% endif %}
+    </body>
+</html>
